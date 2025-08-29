@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100%;
+    background-image: url(images/illuminated-luxury-white-background-3d-background-sci-fi-2560x1440-7652.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav{
+    background-color: white;
+    box-shadow: 1px 1px 7px ;
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+nav a:hover{
+    background-color: hsl(0, 1%, 85%);
+
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.side_bar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    box-shadow: -1px 0px 8px;
+    backdrop-filter:blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu_button{
+    display: none;
+}
+
+.side_bar li{
+    width:100%;
+
+}
+.side_bar a:hover{
+    background-color: hsla(0, 4%, 85%, 0.35);
+}
+.side_bar a{
+    width: 100%;
+}
+
+
+
+.container{
+    padding-top: 20em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container h2{
+    padding: 2em 2em;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    box-shadow: -1px 0px 8px;
+    border-radius: 50px;
+    backdrop-filter:blur(10px);
+}
+.container button{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 40px;
+    backdrop-filter:blur(10px);
+    box-shadow: -1px 0px 8px;
+    
+} 
+
+.container button:hover{
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.507) ;
+    
+}
+.container p1{
+    color: white;
+}
+
+
+
+
+
+@media(max-width:800px){
+    .hide_on_mobile{
+        display: none;
+    }
+    .menu_button{
+        display: block;
+    }
+}
+@media(max-width:800px){
+    .side_bar{
+        width: 100%;
+    }
+}

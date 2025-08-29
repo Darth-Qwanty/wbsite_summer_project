@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    background-image: url(images/red_mountain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+
+}
+.slide_bar_box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 300px;
+}
+.menu_button_box{
+    background-color: wheat;
+}
+.menu_button{
+    
+    background-color: hsla(0, 0%, 0%, 0.397);
+    box-shadow: 1px 1px 7px ;
+    height: 50px;
+    width: 100%;
+    
+}
+.menu_button a{
+    height: 100%;
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: rgb(245, 61, 61);
+}
+
+.side_bar {
+    background-color: hsla(0, 0%, 0%, 0.397);
+    box-shadow: 1px 1px 7px ;
+
+}
+.side_bar ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.side_bar li{
+    height: 50px;
+    
+}
+.side_bar a{
+    height: 100%;
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: rgb(245, 61, 61);
+
+}
+.side_bar a:hover{ 
+    color: WHITE;
+    border-radius: 20px;
+    background-image: linear-gradient(to left,#B41C1C,#D91A1A, #DC1C13,#f3403a,#f84f49);
+}
+.side_bar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background-color: hsla(0, 27%, 29%, 0.2);
+    box-shadow: -1px 0px 8px;
+    backdrop-filter:blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu_button{
+    display: none;
+}
+
+.side_bar li{
+    width:100%;
+
+}
+.side_bar a:hover{
+    background-color: hsl(0, 1%, 85%);
+}
+.side_bar a{
+    width: 100%;
+}
+
+
+
+
+
+.slide_bar{
+    
+    position: relative;
+    width: 600px;
+    height: 50px;
+    background-color: hsla(0, 0%, 0%, 0.397);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.slide_bar a{
+    position: relative;
+    display: inline-block;
+    font-size:1em;
+    font-weight: 500;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    padding: 0 31px;
+    z-index: 1;
+
+}
+.slide_bar span{
+   position: absolute; 
+   top: 0;
+   left: 0;
+   width: 100px;
+   height: 100%;
+   background-image: linear-gradient(to left,#B41C1C,#D91A1A, #DC1C13,#f3403a,#f84f49);
+   border-radius: 8px;
+   transition: .5s;
+   
+}
+.slide_bar a:nth-child(1):hover~span{
+    left: 0;
+}
+.slide_bar a:nth-child(2):hover~span{
+    left: 100px;
+}
+.slide_bar a:nth-child(3):hover~span{
+    left: 200px;
+}
+.slide_bar a:nth-child(4):hover~span{
+    left: 300px;
+}
+.slide_bar a:nth-child(5):hover~span{
+    left: 400px;
+}
+.slide_bar a:nth-child(6):hover~span{
+    left: 500px;
+}
+
+
+
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px ;
+    overflow: hidden;
+}
+.card-list .card-item{
+    list-style: none;
+}
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background-color:hsla(0, 8%, 72%, 0.288);
+    backdrop-filter:blur(10px);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent ;
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.233);
+    transition: 0.5 ease;
+
+}
+.card-list .card-item .card-link:hover{
+    border-color: black;
+}
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.card-list .card-link .badge{
+    color: rgb(17, 17, 17);
+    padding: 8px 16px;
+    background: rgb(143, 123, 123);
+    margin:16px 0 18px ;
+    font-size: 0.95rem;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 50px;
+}
+.card-list .card-link .badge.animation_1{
+    color: rgb(245, 86, 12);
+    
+}
+.card-list .card-link .badge.animation_2{
+    color: rgb(33, 213, 245);
+    
+}
+.card-list .card-link .badge.animation_3{
+    color: rgb(191, 12, 245);
+    
+}
+.card-list .card-link .badge.animation_4{
+    color: rgb(245, 12, 148);
+    
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: rgb(233, 231, 231);
+    font-weight: 600;
+
+
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid rgb(10, 10, 10);
+    transform: rotate(-45deg);
+    transition: 0.4 ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color:rgb(0, 0, 0);
+    background: rgb(240, 238, 238);
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
+    opacity: 0.5;
+    background: rgb(255, 255, 255);
+    backdrop-filter:blur(10px);
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.card-wrapper .swiper-slide-button{
+    color:white;
+    margin-top: -35px;
+    opacity: 0.7;
+    backdrop-filter:blur(10px);
+}
+
+.card-wrapper .swiper-slide-button:hover{
+    color:white;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+@media(max-width:800px){
+    .slide_bar{
+        display: none;
+    }
+    .menu_button{
+        display: block;
+    }
+}
+@media(max-width:800px){
+    .side_bar{
+        width: 100%;
+    }
+}

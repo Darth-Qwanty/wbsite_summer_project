@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicky</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="chill_space.css">
+</head>
+<body>
+
+    <nav >
+        <ul class="side_bar">
+            <li onclick=hide_side_bar()><a href="#"><span class="material-symbols-outlined close">close</span></a></li>
+            <li><a href="Animation_hell.html">Animation hell</a></li>
+            <li><a href="idea_2.html">Idea #2</a></li>
+            <li><a href="clicky.html">Clicky</a></li>
+            <li><a href="chill_space.html">Music Box</a></li>
+            <li><a href="future_plans.html">Future plans</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li class="hide_on_mobile"><a href="Animation_hell.html">Animation hell</a></li>
+            <li class="hide_on_mobile"><a href="idea_2.html">Idea #3</a></li>
+            <li class="hide_on_mobile"><a href="clicky.html">Clicky</a></li>
+            <li class="hide_on_mobile"><a href="chill_space.html">Music Box</a></li>
+            <li class="hide_on_mobile"><a href="future_plans.html">Future plans</a></li>
+            <li class='menu_button' onclick=show_side_bar()><a href="#"><span class="material-symbols-outlined menu_option">menu
+            </span></a></li>
+        </ul>
+    </nav>
+    
+
+    <audio src="" id="audio"></audio>
+
+
+    <div class="container">
+        <div class="music-player">
+            <h1 class="music-name">song one</h1>
+            <p class="artist-name">artist</p>
+            
+            <div class="disk "></div>
+
+            <div class="song-slider">
+                <input type='range' value="0" class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+            </div>
+
+            <div class="controls">
+                <button class="btn backward-btn">
+                    <span class="material-symbols-outlined">
+                    chevron_left
+                    </span>
+                </button>
+                
+                <button class="play-btn pause"> 
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <button class="btn forward-btn">
+                    <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="music.js"></script>
+    <script src="music-set.js"></script>
+
+
+    <script>
+        function show_side_bar(){
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display ='flex'
+        }    
+    </script>
+    <script>
+        function hide_side_bar(){
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display ='none'
+        }    
+    </script>
+</body>
+</html>

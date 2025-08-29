@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idea 2/3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="idea_2.css">
+</head>
+<body>
+
+    <nav >
+        <ul class="side_bar">
+            <li onclick=hide_side_bar()><a href="#"><span class="material-symbols-outlined close">close</span></a></li>
+            <li><a href="Animation_hell.html">Animation hell</a></li>
+            <li><a href="idea_2.html">Idea #2</a></li>
+            <li><a href="clicky.html">Clicky</a></li>
+            <li><a href="chill_space.html">Music Box</a></li>
+            <li><a href="future_plans.html">Future plans</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li class="hide_on_mobile"><a href="Animation_hell.html">Animation hell</a></li>
+            <li class="hide_on_mobile"><a href="idea_2.html">Idea #3</a></li>
+            <li class="hide_on_mobile"><a href="clicky.html">Clicky</a></li>
+            <li class="hide_on_mobile"><a href="chill_space.html">Music Box</a></li>
+            <li class="hide_on_mobile"><a href="future_plans.html">Future plans</a></li>
+            <li class='menu_button' onclick=show_side_bar()><a href="#"><span class="material-symbols-outlined menu_option">menu
+            </span></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Website Shopping  Cart </h2>
+        <p1>To exit press on 'user' icon.</p1>
+        <button id="website">To the website</button>
+    </div>
+    
+    
+
+    <script type="text/javascript">
+        document.getElementById("website").onclick = function () {
+            location.href = "shopping_card.html";
+        };
+    </script>
+
+
+
+    <script>
+        function show_side_bar(){
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display ='flex'
+        }    
+    </script>
+    <script>
+        function hide_side_bar(){
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display ='none'
+        }    
+    </script>
+</body>
+</html>

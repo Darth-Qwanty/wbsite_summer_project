@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation hell</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="animation_hell.css">
+    <!--Linking swiper js to css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <nav >
+        <ul class="side_bar">
+            <li onclick=hide_side_bar()><a href="#"><span class="material-symbols-outlined close">close</span></a></li>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="Animation_hell.html">Animation hell</a></li>
+            <li><a href="idea_2.html">Idea #2</a></li>
+            <li><a href="clicky.html">Clicky</a></li>
+            <li><a href="chill_space.html">Music Box</a></li>
+            <li><a href="future_plans.html">Future plans</a></li>
+        </ul>
+        <!--
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li class="hide_on_mobile"><a href="Animation_hell.html">Animation hell</a></li>
+            <li class="hide_on_mobile"><a href="idea_2.html">Idea #3</a></li>
+            <li class="hide_on_mobile"><a href="clicky.html">Clicky</a></li>
+            <li class="hide_on_mobile"><a href="chill_space.html">Chill area</a></li>
+            <li class="hide_on_mobile"><a href="future_plans.html">Future plans</a></li>
+
+
+            <li class='menu_button' onclick=show_side_bar()><a href="#"><span class="material-symbols-outlined menu_option">menu
+            </span></a></li>
+        </ul>
+        -->
+        <div>
+            <li class='menu_button' onclick=show_side_bar()><a href="#"><span class="material-symbols-outlined menu_option">menu
+                </span></a></li>
+            </div>
+    </nav>
+    <div class="slide_bar_box">
+        <nav class="slide_bar">
+            <a href="index.html">Main Page</a>
+            <a href="Animation_hell.html">Animation hell</a>
+            <a href="idea_2.html">Idea #2</a>
+            <a href="clicky.html">Clicky</a>
+            <a href="chill_space.html">Music Box</a>
+            <a href="future_plans.html">Future plans</a>
+            <span></span>
+        </nav>
+
+    </div>
+    -->
+
+
+
+        <div class="container swiper">
+            <div class="card-wrapper ">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="animations\infinite_scroll.html" class="card-link"><img src="images\Infinite_scroll.jpg" alt="Image" class="card-image">
+                        <p class="badge animation_1">Animation_1</p>
+                        <h2 class="card-title">Infinite scroll</h2>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="animations\3D_slider_effect.html" class="card-link"><img src="images\3D_effect.jpg" alt="Image" class="card-image">
+                        <p class="badge animation_2">Animation_2</p>
+                        <h2 class="card-title">3D Picture rotation</h2>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="animations\highlight_img.html" class="card-link"><img src="images\img_highlight.jpg" alt="Image" class="card-image">
+                        <p class="badge animation_3">Animation_3</p>
+                        <h2 class="card-title">Highlight img when hovered</h2>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="animations\text_box_border_rgb.html" class="card-link"><img src="images\Border_rgb.jpg" alt="Image" class="card-image">
+                        <p class="badge animation_4">Animation_4</p>
+                        <h2 class="card-title">Border rgb</h2>
+                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+    <script>
+        function show_side_bar(){
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display ='flex'
+        }    
+    </script>
+    <script>
+        function hide_side_bar(){
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display ='none'
+        }    
+    </script>
+
+    <!--Linking SwiperJS script to css-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
